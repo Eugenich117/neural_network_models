@@ -123,11 +123,11 @@ optimizer = optim.Adam(model.parameters(), lr=0.001)
 criterion = nn.MSELoss()
 
 # Обучение с Early Stopping
-early_stopping_patience = 30
+early_stopping_patience = 80
 best_loss = float('inf')
 patience_counter = 0
 
-num_epochs = 500
+num_epochs = 1000
 for epoch in range(num_epochs):
     model.train()
     optimizer.zero_grad()
